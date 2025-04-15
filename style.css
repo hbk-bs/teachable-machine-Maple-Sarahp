@@ -1,0 +1,19 @@
+
+body{
+    background-color: rgba(120, 120, 241, 0.7);
+   text-align: center;
+   h1{
+    margin: 2em;
+   }
+   a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(140, 131, 240);
+    border-radius: 1em;
+   }
+   a:hover{
+    text-decoration: underline;
+    color: azure;
+    background-color:rgb(91, 81, 201) ;
+   }
+}
