@@ -12,42 +12,46 @@
     --container-backgrnd: #8e91e4;
 }
 
+html,
 body {
     background-color: var(--base-clr);
     text-align: center;
+    justify-content: center;
+    line-height: 1.5;
 }
 
 h1 {
-    margin: 2em;
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-    font-size: 44px;
+    font-size: 60px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 800;
+    margin-bottom: 0;
+}
+
+h2 {
+
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
 }
 
 a {
     text-decoration: none;
-    color: black;
-    border-radius: 1em;
-    margin-bottom: 1em;
+    color: var(--base-clr);
 }
 
-a:hover {
-    text-decoration: underline;
-    color: var(--accent-scnd-clr);
-    background-color: var(--third-text-backgrnd);
-}
+
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
     background-color: var(--container-backgrnd);
     margin: auto;
-    border-radius: 1em;
+    padding: 5em;
+    border-radius: 2em;
 }
 
 .links {
@@ -55,10 +59,18 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
-    background-color: var(--container-backgrnd);
+    background-color: var(--third-text-backgrnd);
     margin: auto;
     border-radius: 1em;
-    padding: 1em;
+    padding: 3em;
 
+    a {
+        color: var(--text-clr);
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--accent-scnd-clr);
+        background-color: var(--third-text-backgrnd);
+    }
 }
