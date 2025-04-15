@@ -1,36 +1,45 @@
 :root {
-	--base-clr: #11121a;
-	--black: #07081f;
-	--line-clr: #42434a;
-	--hover-clr: #222533;
-	--text-clr: #e6e6ef;
-	--accent-clr: #5e63ff;
-	--accent-scnd-clr: #ffec1e;
-	--second-backgrnd-clr: #242bb4b2;
-	--secondary-text-clr: #b0b3c1;
-	--third-text-backgrnd: #4044b197;
-	--container-backgrnd: #8e91e4;
+    --base-clr: #11121a;
+    --black: #07081f;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --accent-scnd-clr: #ffec1e;
+    --second-backgrnd-clr: #242bb4b2;
+    --secondary-text-clr: #b0b3c1;
+    --third-text-backgrnd: #4044b197;
+    --container-backgrnd: #8e91e4;
 }
-body{
+
+body {
     background-color: var(--base-clr);
-   text-align: center;
-   h1{
+    text-align: center;
+}
+
+h1 {
     margin: 2em;
-   }
-   a{
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+a {
     text-decoration: none;
     color: black;
-    background-color: rgb(140, 131, 240);
     border-radius: 1em;
     margin-bottom: 1em;
-   }
-   a:hover{
-    text-decoration: underline;
-    color: azure;
-    background-color:rgb(91, 81, 201) ;
-   }
 }
-.container{
+
+a:hover {
+    text-decoration: underline;
+    color: var(--accent-scnd-clr);
+    background-color: var(--third-text-backgrnd);
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,4 +48,17 @@ body{
     background-color: var(--container-backgrnd);
     margin: auto;
     border-radius: 1em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    background-color: var(--container-backgrnd);
+    margin: auto;
+    border-radius: 1em;
+    padding: 1em;
+
 }
