@@ -54,7 +54,7 @@ a {
     border-radius: 2em;
 }
 
-.links {
+.sketch{
     display: flex;
     flex-direction: column;
     justify-content: center;
