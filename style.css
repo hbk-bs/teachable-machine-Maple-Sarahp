@@ -52,6 +52,17 @@ a {
     margin: auto;
     padding: 5em;
     border-radius: 2em;
+
+a {
+        color: var(--text-clr);
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--accent-scnd-clr);
+        background-color: var(--third-text-backgrnd);
+    }
+
 }
 
 .sketch{
@@ -64,13 +75,5 @@ a {
     border-radius: 1em;
     padding: 3em;
 
-    a {
-        color: var(--text-clr);
-    }
-
-    a:hover {
-        text-decoration: underline;
-        color: var(--accent-scnd-clr);
-        background-color: var(--third-text-backgrnd);
-    }
+    
 }
