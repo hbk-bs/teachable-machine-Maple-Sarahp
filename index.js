@@ -18,7 +18,8 @@ function preload() {
 
 function setup() {
 	createCanvas(320, 260);
-	// Create the video
+	
+		// Create the video
 	video = createCapture(VIDEO);
 	video.size(320, 240);
 	video.hide();
@@ -46,10 +47,26 @@ function classifyVideo() {
 
 // When we get a result
 function gotResult(results) {
-	console.log(results);
-	// The results are in an array ordered by confidence.
-	// console.log(results[0]);
-	label = results[0].label;
-	// Classifiy again!
-	classifyVideo();
+    if (results && results[0]) {
+        // Das Label des Ergebnisses
+        label = results[0].label;
+
+        // Aktualisiere den Text im #result-Div
+        const resultDiv = document.getElementById('result');
+        resultDiv.textContent = `Detected Genre: ${label}`;
+
+        // Überprüfe, ob das Ergebnis "Pop" ist
+        if (label.toLowerCase() === 'pop') {
+            resultDiv.textContent = 'Du bist Pop!';
+        } else if (label.toLowerCase() === 'rock') {
+            resultDiv.textContent = 'Du bist Rock!';
+        } else if (label.toLowerCase() === 'jazz') {
+            resultDiv.textContent = 'Du bist Jazz!';
+        } else {
+            resultDiv.textContent = `Detected Genre: ${label}`;
+        }
+    }
+
+    // Starte die Klassifizierung erneut
+    classifyVideo();
 }

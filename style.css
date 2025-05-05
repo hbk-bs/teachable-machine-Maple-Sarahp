@@ -1,24 +1,24 @@
 :root {
-    --base-clr: #11121a;
-    --black: #07081f;
-    --line-clr: #42434a;
+    --base-clr: #3f6d30;
+    --black: #000000;
+    --line-clr: #333a71;
     --hover-clr: #222533;
-    --text-clr: #e6e6ef;
-    --accent-clr: #5e63ff;
-    --accent-scnd-clr: #ffec1e;
+    --text-clr: #262626;
+    --accent-clr: #2d3f5b;
+    --accent-scnd-clr: #ffffff;
     --second-backgrnd-clr: #242bb4b2;
-    --secondary-text-clr: #b0b3c1;
-    --third-text-backgrnd: #4044b197;
-    --container-backgrnd: #8e91e4;
+    --secondary-text-clr: #1f3289;
+    --third-text-backgrnd: #0a0fa497;
+    --container-backgrnd: #d4d6d4;
 }
 
 html,
 body {
-    background-color: var(--base-clr);
     text-align: center;
     justify-content: center;
     line-height: 1.5;
 }
+
 
 h1 {
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -26,6 +26,7 @@ h1 {
     font-style: normal;
     font-variant: normal;
     margin-bottom: 0;
+    color: var(--accent-clr);
 }
 
 h2 {
@@ -48,10 +49,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--container-backgrnd);
+    background-color: var(--container-backgrnd); /* Blau definiert in :root */
     margin: auto;
-    padding: 5em;
-    border-radius: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    width: 100%;
+    height: auto;
+
 
 a {
         color: var(--text-clr);
@@ -60,7 +64,6 @@ a {
     a:hover {
         text-decoration: underline;
         color: var(--accent-scnd-clr);
-        background-color: var(--third-text-backgrnd);
     }
 
 }
@@ -74,6 +77,13 @@ a {
     margin: auto;
     border-radius: 1em;
     padding: 3em;
+ 
+}
 
-    
+#result {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: var(--text-clr);
+    font-weight: bold;
+    text-align: center;
 }
