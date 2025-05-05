@@ -63,7 +63,7 @@ function gotResult(results) {
         } else if (label.toLowerCase() === 'jazz') {
             resultDiv.textContent = 'Du bist Jazz!';
         } else {
-            resultDiv.textContent = `Detected Genre: ${label}`;
+            resultDiv.textContent = `Yay du bist: ${label}`;
         }
     }
 
