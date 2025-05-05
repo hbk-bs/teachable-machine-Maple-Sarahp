@@ -1,15 +1,10 @@
 :root {
-    --base-clr: #3f6d30;
-    --black: #000000;
-    --line-clr: #6b77d3;
-    --hover-clr: #222533;
-    --text-clr: #262626;
-    --accent-clr: #315fa9;
-    --accent-scnd-clr: #2944f4;
-    --second-backgrnd-clr: #242bb4b2;
-    --secondary-text-clr: #1f3289;
-    --third-text-backgrnd: #153898c7;
-    --container-backgrnd: #040404;
+    --backgrnd-clr: #5066f8;
+    --link-clr: #9afbfea3;
+    --link-hover: #d7f7f4;
+    --h1: #ff76f1;
+    --text: #f382fd;
+    
 }
 
 html,
@@ -17,16 +12,17 @@ body {
     text-align: center;
     justify-content: center;
     line-height: 1.5;
+    background-color: var(--backgrnd-clr);
 }
 
 
 h1 {
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-    font-size: 60px;
+    font-size: 70px;
     font-style: normal;
     font-variant: normal;
     margin-bottom: 0;
-    color: var(--accent-clr);
+    color: var(--h1);
 }
 
 h2 {
@@ -40,7 +36,6 @@ h2 {
 a, p {
     text-decoration: none;
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-
 }
 
 .sketch{
@@ -69,17 +64,19 @@ a, p {
     
     p{
         font-size: 1.5em;
-        color: var(--third-text-backgrnd);
+        color: var(--text);
         margin: 0 1em 0 0;
     }
 
 a {
-        color: var(--text-clr);
+        color: var(--link-clr);
+        font-size: 1em;
     }
 
     a:hover {
         text-decoration: underline;
-        color: var(--accent-scnd-clr);
+        color: var(--link-hover);
+        font-size: 1.1em;
     }
 
 }
