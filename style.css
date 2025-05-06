@@ -58,7 +58,7 @@ p {
     align-items: center;
 
     img {
-        width: 40%;
+        width: 30%;
         margin-top: -12em;
 
     }
@@ -92,7 +92,7 @@ p {
 }
 
 button#toggleCamera {
-    margin-top: 10px;
+    margin-top: 1.5em;
     margin-bottom: 1em;
     padding: 10px 20px;
     font-size: 1em;
