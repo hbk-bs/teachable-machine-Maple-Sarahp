@@ -10,6 +10,9 @@ let flippedVideo;
 // To store the classification
 let label = '';
 
+// Status der Kamera
+let isCameraPaused = false;
+
 // Load the model first
 function preload() {
 	classifier = ml5.imageClassifier(imageModelURL + 'model.json');
@@ -17,12 +20,27 @@ function preload() {
 }
 
 function setup() {
-	createCanvas(320, 260);
+	createCanvas(320, 260).parent('sketch');
 	
-		// Create the video
+	// Create the video
 	video = createCapture(VIDEO);
 	video.size(320, 240);
 	video.hide();
+
+	// Button-Event hinzufügen
+	const toggleButton = document.getElementById('toggleCamera');
+	toggleButton.addEventListener('click', () => {
+		if (isCameraPaused) {
+			// Kamera starten
+			video.loop();
+			toggleButton.textContent = 'hold that picture';
+		} else {
+			// Kamera pausieren
+			video.pause();
+			toggleButton.textContent = 'resume!';
+		}
+		isCameraPaused = !isCameraPaused;
+	});
 
 	// Start classifying
 	classifyVideo();

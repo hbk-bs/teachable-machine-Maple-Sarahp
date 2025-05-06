@@ -57,7 +57,7 @@ a, p {
     align-items: center;
 
     img{
-        width:400px;
+        width:40%;
         margin-top: -12em;
         
     }
@@ -65,7 +65,8 @@ a, p {
     p{
         font-size: 1.5em;
         color: var(--text);
-        margin: 0 1em 0 0;
+        margin: 0 1em;
+        margin-bottom: 1em;
     }
 
 a {
@@ -81,12 +82,27 @@ a {
 
 }
 
-
-
 #result {
     margin-top: 1em;
     font-size: 1.5em;
     color: var(--text-clr);
     font-weight: bold;
     text-align: center;
+}
+
+button#toggleCamera {
+    margin-top: -20px;
+    margin-bottom: 1em;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: var(--backgrnd-clr);
+    background-color: var(--link-clr);
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+button#toggleCamera:hover {
+    background-color: var(--h1);
+    color: var(--link-hover);
 }
