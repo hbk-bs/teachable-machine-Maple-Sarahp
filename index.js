@@ -21,7 +21,7 @@ function preload() {
 
 function setup() {
 	createCanvas(320, 260).parent('sketch');
-	
+
 	// Create the video
 	video = createCapture(VIDEO);
 	video.size(320, 240);
@@ -65,26 +65,26 @@ function classifyVideo() {
 
 // When we get a result
 function gotResult(results) {
-    if (results && results[0]) {
-        // Das Label des Ergebnisses
-        label = results[0].label;
+	if (results && results[0]) {
+		// Das Label des Ergebnisses
+		label = results[0].label;
 
-        // Aktualisiere den Text im #result-Div
-        const resultDiv = document.getElementById('result');
-        resultDiv.textContent = `Detected Genre: ${label}`;
+		// Aktualisiere den Text im #result-Div
+		const resultDiv = document.getElementById('result');
+		resultDiv.textContent = `Detected Genre: ${label}`;
 
-        // Überprüfe, ob das Ergebnis "Pop" ist
-        if (label.toLowerCase() === 'pop') {
-            resultDiv.textContent = 'Du bist Pop!';
-        } else if (label.toLowerCase() === 'rock') {
-            resultDiv.textContent = 'Du bist Rock!';
-        } else if (label.toLowerCase() === 'jazz') {
-            resultDiv.textContent = 'Du bist Jazz!';
-        } else {
-            resultDiv.textContent = `Yay du bist: ${label}`;
-        }
-    }
+		// Überprüfe, ob das Ergebnis "Pop" ist
+		if (label.toLowerCase() === 'pop') {
+			resultDiv.textContent = 'Du bist Pop!';
+		} else if (label.toLowerCase() === 'rock') {
+			resultDiv.textContent = 'Du bist Rock!';
+		} else if (label.toLowerCase() === 'jazz') {
+			resultDiv.textContent = 'Du bist Jazz!';
+		} else {
+			resultDiv.textContent = `Yay du bist: ${label}`;
+		}
+	}
 
-    // Starte die Klassifizierung erneut
-    classifyVideo();
+	// Starte die Klassifizierung erneut
+	classifyVideo();
 }

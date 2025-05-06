@@ -4,7 +4,7 @@
     --link-hover: #d7f7f4;
     --h1: #ff76f1;
     --text: #f382fd;
-    
+
 }
 
 html,
@@ -33,12 +33,13 @@ h2 {
     font-variant: normal;
 }
 
-a, p {
+a,
+p {
     text-decoration: none;
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
-.sketch{
+.sketch {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +48,7 @@ a, p {
     margin: auto;
     border-radius: 1em;
     padding: 3em;
- 
+
 }
 
 .container {
@@ -56,20 +57,20 @@ a, p {
     justify-content: center;
     align-items: center;
 
-    img{
-        width:40%;
+    img {
+        width: 40%;
         margin-top: -12em;
-        
+
     }
-    
-    p{
+
+    p {
         font-size: 1.5em;
         color: var(--text);
         margin: 0 1em;
         margin-bottom: 1em;
     }
 
-a {
+    a {
         color: var(--link-clr);
         font-size: 1em;
     }
@@ -91,7 +92,7 @@ a {
 }
 
 button#toggleCamera {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 1em;
     padding: 10px 20px;
     font-size: 1em;
